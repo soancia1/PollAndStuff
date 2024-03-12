@@ -1,6 +1,38 @@
+/* Reset some default styles from Create React App */
 .App {
-  text-align: center;
+  /* Remove text-align if not needed, or set it to the desired value */
+  text-align: left;
+  /* You may remove the min-height if it's not necessary for your new layout */
+  min-height: 100vh;
+  /* Adjust padding and other properties as needed */
+  padding: 20px;
+  box-sizing: border-box;
 }
+
+/* Main container for the two-column layout */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section for the polls */
+.polls-section {
+  flex: 1; /* Take up the remaining space */
+  max-width: 60%; /* Limit the width to 60% of the parent container */
+  padding-right: 10px; /* Add some space between the columns */
+}
+
+/* Section for the sticky notes */
+.sticky-notes-section {
+  flex: 1; /* Take up the remaining space */
+  max-width: 40%; /* Limit the width to 40% of the parent container */
+  padding-left: 10px; /* Add some space between the columns */
+  /* Temporary styling for the sticky notes section, adjust as needed */
+  background-color: #f0f0f0;
+  overflow-y: auto; /* Add scroll for overflow content */
+}
+
+/* You can remove the styles below or adjust them according to your new layout needs */
 
 .App-logo {
   height: 40vmin;
@@ -14,8 +46,8 @@
 }
 
 .App-header {
+  /* Adjust the header styles as necessary, or remove if not used */
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +60,8 @@
   color: #61dafb;
 }
 
+/* Comment out the logo animation if not used */
+/*
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +70,6 @@
     transform: rotate(360deg);
   }
 }
+*/
+
+/* Ensure the rest of your styles are here, such as .close-button etc. */

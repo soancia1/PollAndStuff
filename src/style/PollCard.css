@@ -1,9 +1,15 @@
+.close-button{
+  background-color: #cc0000;
+  border-radius: 50%;
+}
+
 .poll-card {
-    background: #1c1c1c;
-    color: white;
-    margin: 10px 0;
-    padding: 20px;
-    border-radius: 8px;
+  background: #1c1c1c;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
   }
   
   .poll-question {
@@ -61,6 +67,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    width: 96%;
   }
   
   .add-poll-form button {
@@ -76,7 +83,7 @@
     max-width: 100%;
     min-width: 140px;
     text-decoration: none;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;

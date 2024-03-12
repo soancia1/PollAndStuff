@@ -96,6 +96,7 @@ const PollList = () => {
         </div>
         <button onClick={handleCreatePoll}>Create Poll</button>
       </div>
+      <div className="polls-container">
       {polls.map((poll) => (
         <PollCard
           key={poll.id}
@@ -108,6 +109,7 @@ const PollList = () => {
           onClose={removePoll}
         />
       ))}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,18 @@
+.sticky-notes-app-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh; /* or any appropriate value */
+  }
+  
+  .polls-section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* In case of scrolling */
+  }
+  
+  .sticky-notes-section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* In case of scrolling */
+  }
+  
