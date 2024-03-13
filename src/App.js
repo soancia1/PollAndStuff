@@ -1,7 +1,7 @@
 import React from 'react';
 import PollList from './components/PollList';
 import './App.css'; // Ensure this file contains the new styles
-// import StickyNotesApp from './components/StickyNotesApp';
+import StickyNotesApp from './components/StickyNotesApp';
 
 const App = () => {
   return (
@@ -9,9 +9,9 @@ const App = () => {
       <div className="polls-section">
         <PollList />
       </div>
-      {/* <div className="sticky-notes-section">
+      <div className="sticky-notes-section">
         <StickyNotesApp />
-      </div> */}
+      </div>
     </div>
   );
 };
